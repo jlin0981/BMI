@@ -11,12 +11,10 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             // 背景灰色，字是藍色
-
             Console.BackgroundColor =  ConsoleColor.Gray ;
             Console.ForegroundColor =  ConsoleColor.Blue;
 
             // 讓使用者輸入基本資料
-
             Console.WriteLine( " 請依序打出使用者的身高 ( 公尺 ) 及體重 ( 公斤 ) " ) ;
             double h = double.Parse( Console.ReadLine ( ) ) ;
             double w = double.Parse( Console.ReadLine ( ) ) ;
@@ -25,11 +23,9 @@ namespace ConsoleApp1
             double BMI;
 
             //計算BMI的值
-
             BMI = w / ( h * h ) ;
 
             // 判斷 BMI 的資訊
-
             if ( BMI < 16.5 ) 
             { Console.WriteLine( " 免役體位 & 體重過輕 " ) ; }
 
